@@ -1,0 +1,76 @@
+[
+    {
+        "model": "menusapp.recipe", 
+        "pk": 1, 
+        "fields": {
+            "name": "Spaghetti Carbonara", 
+            "description": "Traditional italian dish with pasta, eggs and cheese", 
+            "price": "26.90", 
+            "preparing_time": "00:40:00", 
+            "added": "2022-02-06T14:19:07.023Z", 
+            "modified": "2022-02-06T14:26:59.432Z", 
+            "is_vegetarian": false
+        }
+    }, 
+    {
+        "model": "menusapp.recipe", 
+        "pk": 2, 
+        "fields": {
+            "name": "Tiramisu", 
+            "description": "Italian dessert with espresso-soaked biscuits, mascarpone cheese, eggs and sugar", 
+            "price": "16.80", 
+            "preparing_time": "03:45:00", 
+            "added": "2022-02-06T14:23:50.205Z", 
+            "modified": "2022-02-06T14:23:50.205Z", 
+            "is_vegetarian": true
+        }
+    }, 
+    {
+        "model": "menusapp.recipe", 
+        "pk": 3, 
+        "fields": {
+            "name": "Fish and chips", 
+            "description": "Most popular British meal for lunch", 
+            "price": "15.99", 
+            "preparing_time": "00:20:00", 
+            "added": "2022-02-06T17:39:50.205Z", 
+            "modified": "2022-02-06T17:39:50.205Z", 
+            "is_vegetarian": false
+        }
+    }, 
+    {
+        "model": "menusapp.recipe", 
+        "pk": 4, 
+        "fields": {
+            "name": "Baked beans", 
+            "description": "White beans bolied and baked in sauce", 
+            "price": "13.90", 
+            "preparing_time": "01:30:00", 
+            "added": "2022-02-06T17:39:50.205Z", 
+            "modified": "2022-02-06T17:39:50.205Z", 
+            "is_vegetarian": false
+        }
+    }, 
+    {
+        "model": "menusapp.menu", 
+        "pk": 1, 
+        "fields": {
+            "name": "Italian cuisine", 
+            "description": "Classic Italian dishes for you", 
+            "added": "2022-02-06T14:29:52.282Z", 
+            "modified": "2022-02-06T14:33:17.268Z", 
+            "recipes": [1, 2]
+        }
+    }, 
+    {
+        "model": "menusapp.menu", 
+        "pk": 2, 
+        "fields": {
+            "name": "British cuisine", 
+            "description": "British food", 
+            "added": "2022-02-06T17:40:50.205Z", 
+            "modified": "2022-02-06T17:40:50.205Z", 
+            "recipes": [3, 4]
+        }
+    }
+]
