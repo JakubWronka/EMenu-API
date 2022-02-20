@@ -31,4 +31,5 @@ urlpatterns = [
         template_name='swagger-ui.html',
         extra_context={'schema_url':'openapi-schema'}
     ), name='swagger-ui'),
+    path('api-auth/', include('rest_framework.urls')),
 ]
