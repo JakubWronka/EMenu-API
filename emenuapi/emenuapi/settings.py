@@ -134,3 +134,17 @@ REST_FRAMEWORK = {
         'rest_framework.filters.OrderingFilter',
     ),
 }
+
+# Celery Configuration Options
+CELERY_BROKER_URL = 'amqp://kdjbnezw:DaFphE_N48EVsQ7g825VBX3MPWS0TxbB@hawk.rmq.cloudamqp.com/kdjbnezw'
+CELERY_TASK_TRACK_STARTED = True
+CELERY_TASK_TIME_LIMIT = 30 * 60
+
+from celery.schedules import crontab
+
+CELERY_BEAT_SCHEDULE = {
+    "send_mail_recently_modified_data": {
+        "task": "menusapp.tasks.send_mail_recently_modified_data",
+        "schedule": crontab(minute=0, hour=10),
+    },
+}
