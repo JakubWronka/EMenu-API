@@ -30,3 +30,9 @@ OR
 
 ```python manage.py runserver```
 
+6. To run Celery (scheduled tasks)
+
+* In one terminal, run:
+```celery -A emenuapi beat```
+* Open another terminal and run:
+```celery -A emenuapi worker -l INFO```
